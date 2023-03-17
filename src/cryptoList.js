@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import Header from './Header';
 import axios from 'axios';
 import { Table, Pagination, Button, Modal, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -53,7 +54,7 @@ function CryptoList() {
 
   return (
     <div className="container mt-4">
-      <h1>Cryptocurrencies in USD</h1>
+      <Header title="Mi Encabezado" />
       <Form className="mb-3">
         <Form.Group controlId="searchTerm">
           <Form.Label></Form.Label>
